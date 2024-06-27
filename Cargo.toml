@@ -12,8 +12,8 @@ So you can easily expose your generated protobuf code as Pythin binding through 
 2. Macro `with_pyclass` that adds customized `pyclass` attributes macro for your Rust structures."
 
 """
-repository = "https://github.com/austin362667/pyo3_macro"
-homepage = "https://github.com/austin362667/pyo3_macro"
+repository = "https://github.com/austin362667/pyo3-macro"
+homepage = "https://github.com/austin362667/pyo3-macro"
 documentation = "https://docs.rs/pyo3_macro"
 license = "Apache-2.0"
 readme = "README.md"
