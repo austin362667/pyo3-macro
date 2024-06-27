@@ -1,0 +1,22 @@
+[package]
+name = "pyo3_macro"
+version = "0.1.3"
+edition = "2021"
+authors = ["Li-Hsing Liu <austin362667@gmail.com>"]
+description = "This project involves the development of several custom macros to transform Rust structures, generated from Protobuf Interface Definition Language (IDL), into PyO3-ready structures. The macros streamline the process, ensuring seamless integration between Rust and Python, thus enhancing the efficiency of working with Protobuf in a PyO3 environment."
+repository = "https://github.com/austin362667/pyo3_macro"
+homepage = "https://github.com/austin362667/pyo3_macro"
+documentation = "https://docs.rs/pyo3_macro"
+license = "Apache-2.0"
+readme = "README.md"
+keywords = ["macro", "pyo3", "pyclass", "constructor", "python"]
+categories = []
+exclude = ["proto"]
+
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "1.0", features= ["full"] }
+quote = "1.0"
