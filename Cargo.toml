@@ -1,9 +1,17 @@
 [package]
 name = "pyo3_macro"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2021"
 authors = ["Li-Hsing Liu <austin362667@gmail.com>"]
-description = "This project involves the development of several custom macros to transform Rust structures, generated from Protobuf Interface Definition Language (IDL), into PyO3-ready structures. The macros streamline the process, ensuring seamless integration between Rust and Python, thus enhancing the efficiency of working with Protobuf in a PyO3 environment."
+description = """
+A Rust macro crate builds PyO3-compatible Rust `protobuf` and `gRPC` structures.
+So you can easily expose your generated protobuf code as Pythin binding through PyO3.
+
+## Features
+1. Macro `with_new` that implements `__new__` constructor for Rust Python binding.
+2. Macro `with_pyclass` that adds customized `pyclass` attributes macro for your Rust structures."
+
+"""
 repository = "https://github.com/austin362667/pyo3_macro"
 homepage = "https://github.com/austin362667/pyo3_macro"
 documentation = "https://docs.rs/pyo3_macro"
